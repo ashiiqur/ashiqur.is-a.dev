@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ashiqur | is-a.dev</title>
+    <style>
+        /* Developer Dark Theme Variables */
+        :root {
+            --bg-color: #1a1b26;
+            --text-color: #a9b1d6;
+            --accent-color: #7aa2f7;
+            --border-color: #292e42;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            /* Fallback stack for coding fonts */
+            font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        main {
+            max-width: 600px;
+            width: 90%;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent-color);
+            transition: all 0.2s ease-in-out;
+        }
+
+        a:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+
+        /* Blinking terminal cursor animation */
+        .cursor {
+            animation: blink 1s step-end infinite;
+            color: var(--accent-color);
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>> ashiqur.is-a.dev<span class="cursor">_</span></h1>
+        
+        <p>Welcome to my personal developer space.</p>
+        <br>
+        <p>~/links :</p>
+        <p>&nbsp;&nbsp;├─ <a href="https://github.com/ashiiqur" target="_blank">github</a></p>
+        <p>&nbsp;&nbsp;└─ <a href="#" target="_blank">projects</a></p>
+        <br>
+        <p>~/status : Setting up my new domain...</p>
+    </main>
+
+</body>
+</html>
